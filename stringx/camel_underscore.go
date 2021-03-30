@@ -53,7 +53,7 @@ func LowerCamelName(name string) string {
 		if i == 0 {
 			sb.WriteString(item)
 		} else {
-			sb.WriteString(upReplace.Replace(strings.Title(name)))
+			sb.WriteString(upReplace.Replace(strings.Title(item)))
 		}
 	}
 	return sb.String()
