@@ -1,18 +1,18 @@
 /*
-Package stringx pluralizes and singularizes English nouns.
-		stringx.Plural("person") => "people"
-		stringx.Plural("Person") => "People"
-		stringx.Plural("PERSON") => "PEOPLE"
-		stringx.Singular("people") => "person"
-		stringx.Singular("People") => "Person"
-		stringx.Singular("PEOPLE") => "PERSON"
-		stringx.Plural("FancyPerson") => "FancydPeople"
-		stringx.Singular("FancyPeople") => "FancydPerson"
+pluralizes and singularizes English nouns.
+		Plural("person") => "people"
+		Plural("Person") => "People"
+		Plural("PERSON") => "PEOPLE"
+		Singular("people") => "person"
+		Singular("People") => "Person"
+		Singular("PEOPLE") => "PERSON"
+		Plural("FancyPerson") => "FancyPeople"
+		Singular("FancyPeople") => "FancyPerson"
 If you want to register more rules, follow:
-		stringx.AddUncountable("fish")
-		stringx.AddIrregular("person", "people")
-		stringx.AddPlural("(bu)s$", "${1}ses") # "bus" => "buses" / "BUS" => "BUSES" / "Bus" => "Buses"
-		stringx.AddSingular("(bus)(es)?$", "${1}") # "buses" => "bus" / "Buses" => "Bus" / "BUSES" => "BUS"
+		AddUncountable("fish")
+		AddIrregular("person", "people")
+		AddPlural("(bu)s$", "${1}ses") # "bus" => "buses" / "BUS" => "BUSES" / "Bus" => "Buses"
+		AddSingular("(bus)(es)?$", "${1}") # "buses" => "bus" / "Buses" => "Bus" / "BUSES" => "BUS"
 */
 package stringx
 
