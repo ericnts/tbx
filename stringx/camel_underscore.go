@@ -45,3 +45,16 @@ func CamelName(name string) string {
 	name = upReplace.Replace(strings.Title(name))
 	return strings.Replace(name, " ", "", -1)
 }
+
+// 下划线首字母小写的驼峰
+func LowerCamelName(name string) string {
+	var sb strings.Builder
+	for i, item := range strings.Split(name, "_") {
+		if i == 0 {
+			sb.WriteString(item)
+		} else {
+			sb.WriteString(upReplace.Replace(strings.Title(name)))
+		}
+	}
+	return sb.String()
+}
