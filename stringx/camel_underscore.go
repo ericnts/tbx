@@ -6,7 +6,7 @@ import (
 	"unicode"
 )
 
-var commonAbbr = []string{"ID", "API"}
+var commonAbbr = []string{"ID", "API", "GUID"}
 var titleReplace *strings.Replacer
 var upReplace *strings.Replacer
 
